@@ -8,12 +8,14 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+    <nav class="bg-slate-600 text-white px-3 py-4 flex gap-5">
+        <a href="/" class="px-3 py-2 bg-slate-700 rounded-md">Home</a>
+        <a href="/about" class="px-3 py-2 bg-slate-700 rounded-md">About</a>  
+        <a href="/contact" class="px-3 py-2 bg-slate-700 rounded-md">Contact</a>
     </nav>
 
-    {{ $slot }}
+    <main class="p-4">
+        {{ $slot }}
+    </main>
 </body>
 </html>
