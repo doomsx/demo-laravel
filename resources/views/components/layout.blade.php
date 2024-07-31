@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="h-full">
-    <nav class="bg-slate-500 text-white px-3 py-4 flex gap-5 justify-center items-center">
+    <nav class="bg-slate-500 text-white px-3 py-4 flex gap-5 items-center">
         <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
         <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
         <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
