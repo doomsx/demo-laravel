@@ -1,5 +1,5 @@
 <x-layout>
-    <h1 class="text-2xl font-bold">Welcome to Jobs Page</h1>
+    <x-slot:heading>Employers</x-slot:heading>
 
     <ul class="mt-2 px-4">
         @foreach ($employers as $employer)

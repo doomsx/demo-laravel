@@ -14,6 +14,13 @@
         <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
     </nav>
 
+    <header class="">
+        <div class="flex justify-around px-3 py-3 sm:px-3 lg:px-3">
+            <h1 class="text-3xl font-bold text-gray-900">{{$heading}}</h1>
+            <a href="/jobs/create" class="px-4 py-2 border border-black">Create Job</a>
+        </div>
+    </header>
+    
     <main class="p-4">
         {{ $slot }}
     </main>

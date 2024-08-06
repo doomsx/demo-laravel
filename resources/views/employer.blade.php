@@ -1,5 +1,6 @@
 <x-layout>
-    <h1 class="text-2xl font-bold">Employer</h1>
+    <x-slot:heading>Employer</x-slot:heading>
+
     <h3 class="text-lg font-semibold">Employer: {{$employer['name']}}</h3>
 
    <ul>
